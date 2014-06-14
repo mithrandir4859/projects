@@ -1,0 +1,148 @@
+html {
+	/* 	background: url(images/bgr_html.png) #44f fixed; */
+	background: url(/carrental/resources/img/megaback.jpeg) #44f fixed;
+	/* 	background: url(images/nightroad.jpg) #44f fixed; */
+}
+
+p {
+	text-align: center;
+}
+
+body {
+	font: small/1.6em Verdana, Helvetica, Arial, sans-serif;
+	color: white;
+	width: 60%;
+	margin-left: 20%;
+	padding: 20px;
+	border: dotted gray 1px;
+	background: url(img/bgr_body.png);
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.withBorders {
+	border: 1px dotted white;
+	border-collapse: collapse;
+	margin-up: 5px;
+	margin-down: 5px;
+}
+
+.withBorders td {
+	border: 1px dotted white;
+	text-align: center;
+}
+
+.withBorders th {
+	background: url(img/bgr_body.png);
+	text-align: center;
+	border: 1px dotted white;
+}
+
+th {
+	text-align: right;
+}
+
+td {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.middle {
+	text-align: center;
+}
+
+.error {
+	text-align: center;
+	color: #E55;
+}
+
+select {
+	color: white;
+	background: url(img/bgr_body.png);
+	border: dotted gray 1px;
+	overflow: hidden;
+}
+
+select:focus,select:active,select option,select option:focus,select option:active,textarea:focus{
+	background: #001;
+}
+
+textarea {
+	color: white;
+	background: url(img/bgr_body.png);
+	border: dotted gray 1px;
+	overflow: hidden;
+}
+
+/* textarea:focus,select:active,select option,select option:focus,select option:active,textarea:focus{ */
+/* 	background: #001; */
+/* } */
+
+option:hover {
+	background-color: #001;
+}
+
+select:hover option {
+	background-color: #000;
+}
+
+input {
+	color: white;
+	background: url(img/bgr_body.png);
+	border: dotted gray 1px;
+	margin-left: 10px;
+}
+
+input.large[type="submit"] {
+	width: 190px; /* width of image */
+	height: 35px; /* height of image */
+	border: dotted gray 1px;
+	background: url(img/bgr_body.png);
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+/* downloaded css - http://headwaymarketing.com/blog/simple-html-horizontal-menu */
+ul.menu {
+	list-style: none; /* remove bullets */
+	/* 	background: #999; */
+	overflow: auto; /* span the width of the container */
+	padding: 0;
+	margin: 0; /* reset browser defaults */
+	height: 100%; /* ie6 fix */
+}
+
+ul.menu li {
+	/* 	display: inline; line-up the list items horizontally */
+	display: inline-block;
+	padding: 0;
+	margin: 0; /* again, reset browser defaults */
+}
+
+ul.menu li a {
+	padding: 10px 20px;
+	/* 	background: #999; */
+	/* 	background: url(img/bgr_body2.png); */
+	color: #fff;
+	text-decoration: none;
+	/* 	display: block; block it baby! */
+	/* 	float: left; float each list item to the left */
+	display: inline-block;
+}
+
+ul.menu li a:hover {
+	background: url(img/bgr_body.png);
+}
+
+/*http://css-tricks.com/examples/hrs/ */
+hr {
+	height: 12px;
+	border: 0;
+	box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}

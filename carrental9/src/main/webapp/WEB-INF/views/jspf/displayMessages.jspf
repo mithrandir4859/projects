@@ -1,0 +1,23 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="my" uri="/WEB-INF/custom.tld"%>
+
+<div class="middle">
+	<p>
+		<my:localized name="${message }" />
+	</p>
+	<my:localizedList name="messages" />
+	<my:localizedList name="errorList" prefix="error." />
+	<my:localizedMap prefix="error." name="errorMap" />
+</div>
+<c:remove var="message" scope="request" />
+<c:remove var="messages" scope="request" />
+<c:remove var="errorList" scope="request" />
+<c:remove var="errorMap" scope="request" />
+<c:remove var="title" scope="request" />
+
+<c:remove var="message" scope="session" />
+<c:remove var="messages" scope="session" />
+<c:remove var="errorList" scope="session" />
+<c:remove var="errorMap" scope="session" />
+<c:remove var="title" scope="session" />
+

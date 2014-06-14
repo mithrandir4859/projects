@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="vehicleDao.findAllAvailable">
+	SELECT
+		model, mileage, year, FreeCarsForGivenInterval.vehicleId
+	FROM
+		Vehicles
+	JOIN
+		(
+			SELECT
+				a.vehicleId
+			FROM
+				(
+					SELECT
+						vehicleId, COUNT(vehicleId) AS numOfOrders
+					FROM
+						Orders
+					GROUP BY
+						vehicleId
+				) AS a
+			JOIN
+				(
+					SELECT
+						vehicleId, COUNT(vehicleId) AS numOfNonOverlappingOrders
+					FROM
+						Orders
+					WHERE
+						startTime &gt; ? OR endTime &lt; ?
+					GROUP BY
+						vehicleId
+				) AS b
+			ON
+				a.vehicleId = b.vehicleId
+			WHERE
+				a.numOfOrders = b.numOfNonOverlappingOrders
+	) AS FreeCarsForGivenInterval
+	ON
+		Vehicles.vehicleId = FreeCarsForGivenInterval.vehicleId
+	UNION
+	SELECT
+		model, mileage, year, vehicleId
+	FROM
+		Vehicles
+	WHERE
+		vehicleId NOT IN (SELECT DISTINCT vehicleId FROM Orders)
+</entry>
+</properties>

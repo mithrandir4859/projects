@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:bank xmlns:b="ua.andrieiev.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="ua.andrieiev.xml deposit.xsd ">
+	<b:name>Renaissance Capital Bank Beijing</b:name>
+	<b:registration>
+		<b:country>China</b:country>
+	</b:registration>
+
+	<b:accounts>
+		<b:account>
+			<b:number>100500</b:number>
+			<b:type>Poste restante</b:type>
+			<b:depositor id="1">
+				<b:firstname>Yurii</b:firstname>
+				<b:lastname>Andrieiev</b:lastname>
+				<b:ssn>333-22-4444</b:ssn>
+			</b:depositor>
+			<b:balance>6666.66</b:balance>
+			<b:rate>0.124</b:rate>
+			<b:dateStart>2002-09-08</b:dateStart>
+			<b:dateEnd>2214-11-30</b:dateEnd>
+		</b:account>
+
+		<b:account>
+			<b:number>100500</b:number>
+			<b:type>Poste restante</b:type>
+			<b:depositor id="2">
+				<b:firstname>Duncan</b:firstname>
+				<b:lastname>Davidson</b:lastname>
+				<b:ssn>333-22-4444</b:ssn>
+			</b:depositor>
+			<b:balance>1000000.03</b:balance>
+			<b:rate>0.124</b:rate>
+			<b:dateStart>2002-09-08</b:dateStart>
+			<b:dateEnd>2214-11-30</b:dateEnd>
+		</b:account>
+
+		<b:account>
+			<b:number>100500</b:number>
+			<b:type>Poste restante</b:type>
+			<b:depositor id="3">
+				<b:firstname>Kent</b:firstname>
+				<b:lastname>Beck</b:lastname>
+				<b:ssn>333-22-4444</b:ssn>
+			</b:depositor>
+			<b:balance>10006000.10</b:balance>
+			<b:rate>0.124</b:rate>
+			<b:dateStart>2002-09-08</b:dateStart>
+			<b:dateEnd>2214-11-30</b:dateEnd>
+		</b:account>
+
+		<b:account>
+			<b:number>100500</b:number>
+			<b:type>Poste restante</b:type>
+			<b:depositor id="4">
+				<b:firstname>Joshua</b:firstname>
+				<b:lastname>Bloch</b:lastname>
+				<b:ssn>333-22-4444</b:ssn>
+			</b:depositor>
+			<b:balance>200000.32</b:balance>
+			<b:rate>0.124</b:rate>
+			<b:dateStart>2002-09-08</b:dateStart>
+			<b:dateEnd>2214-11-30</b:dateEnd>
+		</b:account>
+
+		<b:account>
+			<b:number>100500</b:number>
+			<b:type>Poste restante</b:type>
+			<b:depositor id="5">
+				<b:firstname>Marc</b:firstname>
+				<b:lastname>Fleury</b:lastname>
+				<b:ssn>333-22-4444</b:ssn>
+			</b:depositor>
+			<b:balance>6666.66</b:balance>
+			<b:rate>0.124</b:rate>
+			<b:dateStart>2002-09-08</b:dateStart>
+			<b:dateEnd>2214-11-30</b:dateEnd>
+		</b:account>
+
+		<b:account>
+			<b:number>100500</b:number>
+			<b:type>Poste restante</b:type>
+			<b:depositor id="6">
+				<b:firstname>Craig</b:firstname>
+				<b:lastname>Mcclanahan</b:lastname>
+				<b:ssn>333-22-4444</b:ssn>
+			</b:depositor>
+			<b:balance>314123.42</b:balance>
+			<b:rate>0.124</b:rate>
+			<b:dateStart>2002-09-08</b:dateStart>
+			<b:dateEnd>2214-11-30</b:dateEnd>
+		</b:account>
+
+		<b:account>
+			<b:number>100500</b:number>
+			<b:type>Poste restante</b:type>
+			<b:depositor id="7">
+				<b:firstname>Rod</b:firstname>
+				<b:lastname>Johnson</b:lastname>
+				<b:ssn>333-22-4444</b:ssn>
+			</b:depositor>
+			<b:balance>3124.56</b:balance>
+			<b:rate>0.124</b:rate>
+			<b:dateStart>2002-09-08</b:dateStart>
+			<b:dateEnd>2214-11-30</b:dateEnd>
+		</b:account>
+
+		<b:account>
+			<b:number>100500</b:number>
+			<b:type>Poste restante</b:type>
+			<b:depositor id="8">
+				<b:firstname>Gavin</b:firstname>
+				<b:lastname>King</b:lastname>
+				<b:ssn>333-22-4444</b:ssn>
+			</b:depositor>
+			<b:balance>432234.99</b:balance>
+			<b:rate>0.174</b:rate>
+			<b:dateStart>2002-09-08</b:dateStart>
+			<b:dateEnd>2214-11-30</b:dateEnd>
+		</b:account>
+
+		<b:account>
+			<b:number>100500</b:number>
+			<b:type>Poste restante</b:type>
+			<b:depositor id="9">
+				<b:firstname>James</b:firstname>
+				<b:lastname>Gosling</b:lastname>
+				<b:ssn>333-22-4444</b:ssn>
+			</b:depositor>
+			<b:balance>7777774.43</b:balance>
+			<b:rate>0.324</b:rate>
+			<b:dateStart>2002-09-08</b:dateStart>
+			<b:dateEnd>2214-11-30</b:dateEnd>
+		</b:account>
+
+	</b:accounts>
+</b:bank>

@@ -1,0 +1,128 @@
+﻿BLAH.BLAH=BLAH
+menu.makeOrder=Зробити замовлення
+menu.myOrders=Мої замовлення
+menu.login=Увійти
+menu.register=Зареєструватися
+menu.selectOrders=Обрати замовлення
+menu.logout=Вийти
+menu.home=Головна
+menu.welcome=Вітаємо
+menu.passportInfo=Паспортні дані
+
+date.chooseDate=Спершу оберіть період:
+date.day=День
+date.month=Місяць
+date.year=Рік
+date.searchCar=Знайти машину
+date.start=З:
+date.end=По:
+
+title.chooseInterval=Оберіть період
+
+error.badMail=Некоректна пошта
+
+footer.poweredBy=Зробив
+author.name =Андрєєв Юрій
+error.badPassword=Некоретний пароль
+error.userNotFound=Користувач із заданою парою пошта-пароль не був знайдений
+error.emptyPassword=Ви маєте ввести пароль
+error.emptyMail=Ви маєте ввести пошту
+
+title.login=Вхід
+login.submit=Увійти
+
+title.notFound=Не знайдено
+error.notFound=Нажаль, за вашим запитом не було нічого знайдено
+
+title.accessDenied=У доступі відмовлено
+accessDenied.forAnon=Ви маєте авторизуватися, щоб переглядати запитану сторінку
+accessDenied.forUserAdmin=У доступі відмовлено, у вас немає прав для виконання такого запиту
+
+title.displayVehicles=Список автівок
+displayVehicles.chooseCar=Оберіть автівку, будь ласка:
+vehicle.model=Модель
+vehicle.mileage=Пробіг
+vehicle.year=Рік випуску
+displayVehicles.go=Обрати
+
+title.loginSuccess=Це успіх!
+loginSuccess.msg=Ви залогінилися успішно, мої вітання.
+
+title.register=Реєстрація
+register.submit=Зареєструватися
+
+questionnaire.email=Пошта
+questionnaire.password=Пароль   
+questionnaire.passwordConfirm=Підтвердження пароля
+questionnaire.firstname=Ім'я
+questionnaire.lastname=Прізвище   
+questionnaire.phone=Номер телефону
+
+error.email.empty=Вам необхідно вказати пошту 
+error.email.badFormat=Некоректний формат пошти
+
+error.password.empty=Будь ласка, введіть пароль 
+error.password.badFormat=Некоректний формат пароля
+
+error.firstname.tooShort=Занадто коротке ім'я
+error.firstname.tooLong=Занадто довге ім'я
+error.lastname.tooShort=Занадто коротке прізвище
+error.lastname.tooLong=Занадто довге прізвище
+error.phone.tooShort=Занадто короткий номер телефону
+
+error.firstname.empty=Введіть ваше ім'я, будь ласка
+error.lastname.empty=Введіть ваше прізвище, будь ласка
+error.phone.empty=Введіть ваш номер телефону, будь ласка
+
+error.passwordConfirm.differentPasswords=Введені паролі не співпадають
+
+error.emptyOrderStatuses=Вкажіть хоча б один стан замовлення
+
+title.selectOrders=Обрати замовлення
+selectOrders.search=Шукати
+orderStatus.WAITING_FOR_PHONE_CONFIRMATION=Чекаємо на підтвердження по телефону
+orderStatus.WAITING_FOR_PAYMENT=Чекаємо оплату
+orderStatus.PAID=Сплачено
+orderStatus.USING_A_CAR=Машина у прокаті
+orderStatus.CAR_RETURNED=Машину повернули
+orderStatus.CAR_BROKEN_WAITING_FOR_PAYMENT=Машина пошкоджена, чекаємо на відшкодування
+orderStatus.DONE=Замовлення виконане та закрите
+orderStatus.CANCELLED=Відмінено
+orderStatus.CANCELLED_BY_USER=Відмінено користувачем
+
+title.displaySelectedOrders=Список замовлень
+error.noOrdersFound=За вашим запитом не було знайдено замовлень
+order.orderId=id замовлення
+user.userId=id користувача
+vehicle.vehicleId=id автівки
+vehicle.model=Модель
+order.orderStatus=Стан замовлення
+cancel=Скасувати
+
+title.editOrder=Редагувати замовлення
+user=Користувач
+vehicle=Автівка
+date.dates=Період
+user.phone=Телефон
+editOrder.updateStatus=Змінити статус
+editOrder.editOrderWithNum=Редагувати замовлення №
+
+error.orderNotFound=Замовлення із заданим id не знайдено
+error.orderId.empty=Будь ласка вкажіть непустий id замовлення для редагування
+
+editOrder.reason=Ви моежет тут вказати причину зміни стану замовлення
+
+editOrder.payment=Платіж
+editOrder.sendReason=Вказати причину для користувача
+editOrder.updateOrder=Оновити
+
+orderHistory.reason=Причина зміни статусу
+orderHistory.date=Дата
+orderHistory.payment=Очікуваний платіж
+
+passportInfo.series=Серія паспорту
+passportInfo.number=Номер паспорту
+date.issued=Дата видачі
+passportInfo.submit=Оновити інформацію
+
+registerSuccess.msg=Реєстрація успішна

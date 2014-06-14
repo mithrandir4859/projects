@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="ua.andrieiev.xml" xmlns:bank="ua.andrieiev.xml"
+	elementFormDefault="qualified">
+
+	<!-- Global root element -->
+	<xs:element name="bank">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string" />
+				<xs:element name="registration" type="bank:registration" maxOccurs="unbounded" />
+				<xs:element name="accounts" type="bank:accounts" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Wrapper for accounts -->
+	<xs:complexType name="accounts">
+		<xs:sequence>
+			<xs:element name="account" type="bank:account" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Now we have only one nested element in registration type, but further 
+		extending is very likely -->
+	<xs:complexType name="registration">
+		<xs:sequence>
+			<xs:element name="country" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="account">
+		<xs:sequence>
+
+			<xs:element name="number" type="xs:long" />
+			<xs:element name="type" type="bank:accountType" />
+			<xs:element name="depositor" type="bank:person" />
+
+			<xs:element name="balance">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="10" />
+						<xs:fractionDigits value="2" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+
+			<xs:element name="rate">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="4" />
+						<xs:fractionDigits value="3" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+
+			<xs:element name="dateStart" type="xs:date" />
+			<xs:element name="dateEnd" type="xs:date" minOccurs="0" />
+
+		</xs:sequence>
+		<!-- <xs:attribute name="id" type="xs:positiveInteger" use="required" /> -->
+	</xs:complexType>
+
+
+	<xs:complexType name="person">
+		<xs:sequence>
+			<xs:element name="firstname" type="bank:name" />
+			<xs:element name="lastname" type="bank:name" />
+			<xs:element name="ssn" type="bank:SSN" />
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:positiveInteger" use="required" />
+	</xs:complexType>
+
+	<xs:simpleType name="SSN">
+		<xs:restriction base="xs:token">
+			<xs:pattern value="[0-9]{3}-[0-9]{2}-[0-9]{4}" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="name">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2" />
+			<xs:maxLength value="20" />
+			<xs:pattern value="[A-Z][a-z]+" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="accountType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Poste restante" />
+			<xs:enumeration value="Urgent" />
+			<xs:enumeration value="Accumulative" />
+			<xs:enumeration value="Metal" />
+			<xs:enumeration value="Current" />
+			<xs:enumeration value="Savings" />
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

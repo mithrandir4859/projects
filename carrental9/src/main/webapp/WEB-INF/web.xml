@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<display-name>Car Rental</display-name>
+
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/WEB-INF/views/msgPages/exception.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/views/msgPages/notFound.jsp</location>
+	</error-page>
+
+	<servlet>
+		<servlet-name>index</servlet-name>
+		<jsp-file>/WEB-INF/views/all/home.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>index</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index</welcome-file>
+	</welcome-file-list>
+
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/views/jspf/startOfPage.jspf</include-prelude>
+			<include-coda>/WEB-INF/views/jspf/footer.jspf</include-coda>
+		</jsp-property-group>
+
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<page-encoding>UTF-8</page-encoding>
+		</jsp-property-group>
+	</jsp-config>
+
+	<context-param>
+		<param-name>dbCreationQueriesFile</param-name>
+		<param-value>dbCreation.sql</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>boneCpPropertiesFile</param-name>
+		<param-value>boneCp.properties</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>longQueriesFile</param-name>
+		<param-value>longQueries.xml</param-value>
+	</context-param>
+
+</web-app>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+   "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+
+<!-- a tab library descriptor -->
+<taglib xmlns="http://java.sun.com/JSP/TagLibraryDescriptor">
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>MyCustomTags</short-name>
+
+
+
+	<tag>
+		<name>authorize</name>
+		<tag-class>carrental.web.tags.AuthorizeTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>access</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>dropdownList</name>
+		<tag-class>carrental.web.tags.DropdownList</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>start</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>end</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>setLocale</name>
+		<tag-class>carrental.web.tags.SetLocale</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>language</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>l10nBundleProviderName</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>localized</name>
+		<tag-class>carrental.web.tags.Localized</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>advancedInput</name>
+		<tag-class>carrental.web.tags.AdvancedInput</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>name</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>label</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>attributes</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>localizedList</name>
+		<tag-class>carrental.web.tags.LocalizedList</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>prefix</name>
+			<required>false</required>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>localizedMap</name>
+		<tag-class>carrental.web.tags.LocalizedMap</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>name</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>prefix</name>
+			<required>false</required>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>orderHistory</name>
+		<tag-class>carrental.web.tags.OrderHistory</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+</taglib>

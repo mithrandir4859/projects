@@ -1,0 +1,14 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="my" uri="/WEB-INF/custom.tld"%>
+<table>
+	<c:set var="prefix" value="questionnaire" />
+	<my:advancedInput label="${prefix }.email"/>
+	<my:advancedInput label="${prefix }.password" />
+	<my:advancedInput label="${prefix }.passwordConfirm" />
+	<my:advancedInput label="${prefix }.firstname" />
+	<my:advancedInput label="${prefix }.lastname" />
+	<my:advancedInput label="${prefix }.phone" />
+</table>
+
+
+
